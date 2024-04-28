@@ -2,7 +2,7 @@ name: Test and lint on push
 on: [push]
 jobs:
     build:
-        runs-on: ubuntu-lates
+        runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
             - name: Use Node JS
