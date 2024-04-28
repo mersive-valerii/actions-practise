@@ -13,9 +13,11 @@ jobs:
         run: npm ci
       - name: Run tests
         run: npm test
-      - name: Run linters
-        uses: wearerequired/lint-action@v2
-        with:
-          eslint: true
+      - name: Lint
+        run: npm run lint
+    #   - name: Run linters
+    #     uses: wearerequired/lint-action@v2
+    #     with:
+    #       eslint: true
       - name: Build project
         run: npm run build
